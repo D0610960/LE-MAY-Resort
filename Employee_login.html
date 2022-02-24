@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LE MAY - Employee Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .word-break--keep-all {
+            word-break: keep-all;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 50%;
+            padding: 5px 10px;
+            box-sizing: border-box;
+            border: 2px solid silver;
+            outline: none;
+            font-family: 'Montserrat', sans-serif, "微軟正黑體";
+        }
+
+        input[type=checkbox] {
+            width: 30px;
+            padding: 5px 5px;
+            border: 3px solid silver;
+            outline: none;
+            font-family: 'Montserrat', sans-serif, "微軟正黑體";
+        }
+
+        button {
+            width: 35%;
+            background-color: #7E8095;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        button:hover {
+            width: 35%;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- Header -->
+    <form action="https://localhost/NET/Employee_login_check.php" method="post">
+        <div class="container font-montserrat">
+            <div style="height: 150px; overflow: hidden;"></div>
+            <h2 style="letter-spacing:3px;text-transform: uppercase;">
+                <b>Employee&nbsp;&nbsp;Login</b>
+            </h2>
+            <div style="height: 32px; overflow: hidden;"></div>
+            <label for="uno" style="font-size:20px">Employee Number</label><br>
+            <input type="text" name="uno" required><br>
+
+            <label for="psw" style="font-size:20px">Password</label><br>
+            <input type="password" name="psw" required><br>
+            <div style="height: 50px; overflow: hidden;"></div>
+            <button type="submit" style="font-size:15px">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember" style="font-size:15px"> Remember me
+            </label>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
